@@ -9,11 +9,12 @@ RUN apt-get update \
 #WORKDIR /usr/local/cgs/
 #RUN pwd
 #RUN ls
-RUN pip install -r requirements.txt	
+
 
 # create place for app to run from
 WORKDIR /app/
 COPY . /app/
+RUN pip install -r requirements.txt	
 
 #CMD ["python","counter.py"]
 #CMD "/bin/sh"

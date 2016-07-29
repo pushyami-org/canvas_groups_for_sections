@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER Pushyami Gundala <pushyami@umich.edu>
 
 RUN apt-get update \

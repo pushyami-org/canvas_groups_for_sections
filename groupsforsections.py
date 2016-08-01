@@ -255,7 +255,9 @@ def main():
     #canvas_token = environ['CANVAS_TOKEN']
     #canvas_url = environ['CANVAS_URL']
     canvas_token = fou.read()
+    print "the canvas_token value is: " + canvas_token
     canvas_url = myfile.read()
+    print "the canvas_url value is: " + canvas_url
 
     if course_id is None or group_category_name is None or canvas_token is None or canvas_url is None:
         logging.error("some of the configurations from properties file are missing: "

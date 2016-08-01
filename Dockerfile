@@ -1,10 +1,9 @@
 FROM ubuntu:16.04
 MAINTAINER Pushyami Gundala <pushyami@umich.edu>
 
-RUN /bin/bash -c 'source $HOME/.bashrc ; echo $HOME'
 
 RUN apt-get update \
-	&& apt-get install -y python python-pip git 
+	&& apt-get install -y bash python python-pip git 
 #WORKDIR /usr/local/
 #RUN git clone https://github.com/pushyamig/canvas_groups_for_sections cgs
 #RUN git checkout TLCGS-5

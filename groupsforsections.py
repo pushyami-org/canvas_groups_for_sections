@@ -252,8 +252,6 @@ def main():
 
     course_id = environ['COURSE_ID']
     group_category_name = environ['CAT_NAME']
-    #canvas_token = environ['CANVAS_TOKEN']
-    #canvas_url = environ['CANVAS_URL']
     canvas_token = fou.read()
     print "the canvas_token value is: " + canvas_token
     canvas_url = myfile.read()

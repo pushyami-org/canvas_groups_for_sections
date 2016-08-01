@@ -1,8 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER Pushyami Gundala <pushyami@umich.edu>
 
-RUN apk add --no-cache \
-		bash 
+RUN /bin/bash -c 'source $HOME/.bashrc ; echo $HOME'
 
 RUN apt-get update \
 	&& apt-get install -y python python-pip git 

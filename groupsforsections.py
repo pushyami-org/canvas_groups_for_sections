@@ -247,7 +247,7 @@ def main():
     # canvas_url = sf[CONST_CANVAS][CONST_URL]
     
     print "the url value is: " + open("/usr/local/secret-volume/url", "r")
-    print "the url value is: " + open("/usr/local/secret-volume/token", "r")
+    print "the token value is: " + open("/usr/local/secret-volume/token", "r")
 
     course_id = environ['COURSE_ID']
     group_category_name = environ['CAT_NAME']

@@ -246,17 +246,15 @@ def main():
     # canvas_token = sf[CONST_CANVAS][CONST_TOKEN]
     # canvas_url = sf[CONST_CANVAS][CONST_URL]
     myfile = open("/usr/local/secret-volume/url", "r")
+    canvas_url = myfile.read()
     print "the url value is: " + myfile.read()
     fou = open("/usr/local/secret-volume/token", "r")
+    canvas_token = fou.read()
     print "the token value is: " + fou.read()
 
     course_id = environ['COURSE_ID']
     group_category_name = environ['CAT_NAME']
-    canvas_token = fou.read()
-    print "the canvas_token value is: " + canvas_token
-    canvas_url = myfile.read()
-    print "the canvas_url value is: " + canvas_url
-
+    
     if course_id is None or group_category_name is None or canvas_token is None or canvas_url is None:
         logging.error("some of the configurations from properties file are missing: "
                       "course_id = " + str(course_id) + " ; group_category_name = " + str(group_category_name) +

@@ -248,7 +248,7 @@ def main():
     myfile = open("/usr/local/secret-volume/url", "r")
     canvas_url = myfile.read()
     fou = open("/usr/local/secret-volume/token", "r")
-    canvas_token = fou.read()
+    canvas_token = fou.read().rstrip()
     course_id = environ['COURSE_ID']
     group_category_name = environ['CAT_NAME']
     

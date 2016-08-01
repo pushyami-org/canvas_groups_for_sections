@@ -247,11 +247,8 @@ def main():
     # canvas_url = sf[CONST_CANVAS][CONST_URL]
     myfile = open("/usr/local/secret-volume/url", "r")
     canvas_url = myfile.read()
-    print "the url value is: " + myfile.read()
     fou = open("/usr/local/secret-volume/token", "r")
     canvas_token = fou.read()
-    print "the token value is: " + fou.read()
-
     course_id = environ['COURSE_ID']
     group_category_name = environ['CAT_NAME']
     

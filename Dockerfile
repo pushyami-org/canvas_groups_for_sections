@@ -3,7 +3,7 @@ MAINTAINER Pushyami Gundala <pushyami@umich.edu>
 
 
 RUN apt-get update \
-	&& apt-get install -y bash python python-pip git 
+	&& apt-get install -y vim python python-pip git 
 #WORKDIR /usr/local/
 #RUN git clone https://github.com/pushyamig/canvas_groups_for_sections cgs
 #RUN git checkout TLCGS-5

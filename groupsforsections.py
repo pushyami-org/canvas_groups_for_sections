@@ -272,9 +272,8 @@ def main():
     group_category_id = create_group_category(group_category_name, groups_for_section_class, course_id)
 
     if group_category_id is None:
-        raise Exception('Group category is not created for course ')
-        #logging.error('Group category "%s" is not created for course %s ' %(group_category_name, course_id))
-        #sys.exit(0)
+        logging.error('Group category "%s" is not created for course %s ' %(group_category_name, course_id))
+        sys.exit(1)
 
     sections = get_sections_for_course({}, groups_for_section_class, course_id)
 
